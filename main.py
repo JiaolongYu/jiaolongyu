@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-
+@app.route('/magic')
+def magic():
+    return render-template('magic.html')
 @app.route('/resume')
 def resume():
     return render_template('resume.html')
